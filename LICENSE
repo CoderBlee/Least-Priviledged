@@ -20,3 +20,4 @@ Add-LocalGroupMember -Group "Users" -Member $Username1
 Add-LocalGroupMember -Group "Users" -Member $Username2
 
 Write-Host "Users Bee1 and Bee2 have been created with standard privileges."
+
