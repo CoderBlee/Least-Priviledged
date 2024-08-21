@@ -1,6 +1,3 @@
-Here is a `README.md` file tailored for your GitHub repository based on the content of your project:
-
-```markdown
 # Project 010 - Implementing Least Privilege on Windows
 
 ## Overview
@@ -98,7 +95,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Special thanks to the developers of the resources used in this project for their valuable tutorials and guides.
 
-```
 
 ### Key Points:
 - **Overview**: Provides a summary of what the project is about.
@@ -109,3 +105,5 @@ Special thanks to the developers of the resources used in this project for their
 - **Contributing & License**: Information for potential contributors and legal usage of the project.
 
 This `README.md` file will make your GitHub repository informative and user-friendly.
+
+
