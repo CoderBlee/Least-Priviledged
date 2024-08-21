@@ -1,0 +1,22 @@
+
+### 2. **PowerShell Scripts (`setup/` Directory)**
+
+#### **`create_users.ps1`**
+```powershell
+# PowerShell Script to Create User Accounts
+
+# Usernames and Passwords
+$Username1 = "Bee1"
+$Username2 = "Bee2"
+$Password1 = ConvertTo-SecureString "P@ssword1" -AsPlainText -Force
+$Password2 = ConvertTo-SecureString "P@ssword2" -AsPlainText -Force
+
+# Create Users
+New-LocalUser $Username1 -Password $Password1 -PasswordNeverExpires -UserMayNotChangePassword -AccountNeverExpires
+New-LocalUser $Username2 -Password $Password2 -PasswordNeverExpires -UserMayNotChangePassword -AccountNeverExpires
+
+# Add Users to the 'Users' Group
+Add-LocalGroupMember -Group "Users" -Member $Username1
+Add-LocalGroupMember -Group "Users" -Member $Username2
+
+Write-Host "Users Bee1 and Bee2 have been created with standard privileges."
